@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel de imagenes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <button class="inicio" id="inicio">iniciar Sesión</button>
+            </div>
+            <div>
+                <p id="demo"></p>
+            </div>
+        </nav>
+    </header>
+
+    <h1>Carousel de imagenes</h1>
+
+    <!-- contenedor para las imagenes -->
+    <div class="slideshow-container">
+
+        <!-- contenedor para cada una de estas imagnes con su descripcion -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="img/foto1.jpg">
+          <div class="text">Galaxia</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img/foto2.jpg">
+          <div class="text">Agujero negro</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="img/foto3.jpg">
+          <div class="text">Planeta</div>
+        </div>
+        
+        <!-- botones de adelante y atras -->
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <!-- circulos debajo de las imagenes -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+        <!-- ventana modal -->
+        <div class="modalContainer1" id="modalContainer">
+            <div class="modal">
+                <h2>ingreso</h2>
+                <form action="#">
+                    <div>
+                        <label for="usuario">Usuario</label>
+                        <input type="text" id="usuario" required>
+                    </div>
+                    <div>
+                        <label for="contraseña">Contraseña</label>
+                        <input type="password" id="contraseña">
+                    </div>
+                </form>
+                <button class="btn" id="ingresar" onclick="modificar ()">ingresar</button>
+            </div>
+        </div>
+        <footer>
+            <div></div>
+        </footer>
+
+    <script src="js/functions.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>
